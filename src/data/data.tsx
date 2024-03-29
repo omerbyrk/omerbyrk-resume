@@ -73,14 +73,13 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        I'm a Ankara based <strong className="text-stone-100">Mobile App Developer</strong>, currently working as freelancer
+        at <strong className="text-stone-100">Fiverr</strong> helping build a modern, well-designed, clean-coded mobile applications.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        In my free time time, you can catch me at <strong className="text-stone-100">GYM</strong>,
+        driving <strong className="text-stone-100">motorcycle</strong>, reading <strong className="text-stone-100">books</strong> or exploring beautiful{' '}
+        <strong className="text-stone-100">places</strong>.
       </p>
     </>
   ),
@@ -104,16 +103,14 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `I am a computer engineer who worked with varieties programing language in IT sector. At first, I have started to learn JAVA by including Hibernate, Spring & Sprint Boots. Later on, at my first professional job, I have learnt .Net Core, Angular & SQL. On my personal project, I have used Golang, NodeJS, React and even Vue. The language does not matter If you are professional enough! Finally, I am keeping up my journey by developing Mobile Apps with Swift & Flutter.`,
   aboutItems: [
-    { label: 'Location', text: 'Victoria, BC', Icon: MapIcon },
-    { label: 'Age', text: '29', Icon: CalendarIcon },
-    { label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon },
-    { label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon },
-    { label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon },
-    { label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon },
+    { label: 'Location', text: 'Ankara', Icon: MapIcon },
+    { label: 'Age', text: '28', Icon: CalendarIcon },
+    { label: 'Nationality', text: 'Turk', Icon: FlagIcon },
+    { label: 'Interests', text: 'Motorcycles, GYM, Books', Icon: SparklesIcon },
+    { label: 'Study', text: 'Gazi University', Icon: AcademicCapIcon },
+    { label: 'Employment', text: 'Fiverr & Biounluk', Icon: BuildingOffice2Icon },
   ],
 };
 
@@ -125,16 +122,12 @@ export const skills: SkillGroup[] = [
     name: 'Spoken languages',
     skills: [
       {
-        name: 'English',
+        name: 'Turkish',
         level: 10,
       },
       {
-        name: 'French',
-        level: 4,
-      },
-      {
-        name: 'Spanish',
-        level: 3,
+        name: 'English',
+        level: 7.5,
       },
     ],
   },
@@ -268,16 +261,18 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'April 2024',
+    location: 'Gazi University',
+    title: 'Computer Engineer',
+    content: <p>
+      I have deeply understand that <strong className="text-stone-600">Object Oriented Programing, Data Structure, Network & Database System</strong>. I have also get experinced of <strong className="text-stone-600">AI, Microprocessors, Unix Programing, Image Processing & Real Time Sysyems</strong>. The one of the best thing I got from the University is <strong className="text-stone-600">researching essays on Google Scholar</strong>. I have developed <strong className="text-stone-600">Custom OCR System, Social Mobile App & Building an AI model</strong> to detect If a person is skin cancer by scar photo of her/him. Finally, while I am at university, I have worked professionally at Fastsoft Company(I was intern before) and deeply understood <strong className="text-stone-600">Git, Agile Management & Team Work</strong>.
+    </p>,
   },
   {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'March 2017',
+    location: 'Ordu University',
+    title: 'Computer Programing',
+    content: <p>It was wonderful to understanding basic of Algorithm by learning <strong className="text-stone-600">Pascal & C#</strong>. In my personal time, I have putted my time to learn <strong className="text-stone-600">Java, JavaScript, CSS & HTML</strong>. I have developed <strong className="text-stone-600">blog site, movie site, restrountant managment system</strong> until the university end.</p>,
   },
 ];
 
