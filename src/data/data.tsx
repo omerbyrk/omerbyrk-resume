@@ -265,7 +265,7 @@ export const education: TimelineItem[] = [
     location: 'Gazi University',
     title: 'Computer Engineer',
     content: <p>
-      I have deeply understand that <strong className="text-stone-600">Object Oriented Programing, Data Structure, Network & Database System</strong>. I have also get experinced of <strong className="text-stone-600">AI, Microprocessors, Unix Programing, Image Processing & Real Time Sysyems</strong>. The one of the best thing I got from the University is <strong className="text-stone-600">researching essays on Google Scholar</strong>. I have developed <strong className="text-stone-600">Custom OCR System, Social Mobile App & Building an AI model</strong> to detect If a person is skin cancer by scar photo of her/him. Finally, while I am at university, I have worked professionally at Fastsoft Company(I was intern before) and deeply understood <strong className="text-stone-600">Git, Agile Management & Team Work</strong>.
+      I have deeply understand that <strong className="text-stone-600">Object Oriented Programing, Data Structure, Design Patterns, Network & Database System</strong>. I have also get experinced of <strong className="text-stone-600">AI, Microprocessors, Unix Programing, Image Processing & Real Time Sysyems</strong>. The one of the best thing I got from the University is <strong className="text-stone-600">researching essays on Google Scholar</strong>. I have developed <strong className="text-stone-600">Custom OCR System, Social Mobile App & Building an AI model</strong> to detect If a person is skin cancer by scar photo of her/him. Finally, while I am at university, I have worked professionally at Fastsoft Company(I was intern before) and deeply understood <strong className="text-stone-600">Git, Agile Management & Team Work</strong>.
     </p>,
   },
   {
@@ -278,27 +278,73 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'March 2020 - Present',
+    location: 'Fiverr & Bionluk',
+    title: 'Flutter Developer',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Depending on the customer's desires, I create a new application, add features to an existing application, or solve a bug in the application.
+        <br />
+        <br />
+        <strong>General Tasks</strong>
+        <ul style={{ listStyleType: "unset", paddingLeft: "20px" }}>
+          <li>UI Designs</li>
+          <li>Backend API Integration(using GraphQL & JSON)</li>
+          <li>Backend Authentication Integration(using JWT mostly)</li>
+          <li>Firebase Module Integrations(Messaging & Remote Control & Analytics & Database &
+            Authentication ...)</li>
+          <li>In-App Purchase/Subscription (RevenueCat)</li>
+          <li>AdMob Integration</li>
+          <li>pub.dev library integration</li>
+        </ul>
       </p>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: 'March 2022 - October 2022',
+    location: 'FreshApps at Eindhoven, Netherlands',
+    title: 'Flutter Developer',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        We have developed an app named DIDIYO consist of customer, market and courier applications. The project details is added to the projects section below. 2-week sprints were run for project management. JIRA, Time Doctor, Zoom & Teams were used for team management. Bitbucket was used as the version control system(Git).<br /><br />
+        <strong>General Tasks</strong>
+        <ul style={{ listStyleType: "unset", paddingLeft: "20px" }}>
+          <li>UI Designs</li>
+          <li>Backend API Integration(using GraphQL & JSON)</li>
+          <li>Payment Gateway Integration</li>
+          <li>Bug fixings in Sprint backlog</li>
+          <li>Rich Notification Integration(with Link & Image)</li>
+          <li>Deep Link Integration</li>
+          <li>pub.dev library integration</li>
+          <li>Add to cart animation was developed by me for the DIDIYO project and uploaded to the pub.dev platform as an library. It has <strong className="text-stone-600"> 200 Likes & %93 popularity! 🤩</strong> <br />Link: <a style={{ color: "blue" }} href="https://pub.dev/packages/add_to_cart_animation" target='_blank'>add_to_cart_animation | Flutter packages</a> </li>
+        </ul>
       </p>
     ),
   },
+  {
+    date: 'October 2019 - October 2020',
+    location: 'Software Developer',
+    title: 'Efor Group Insurance/Broker',
+    content: (
+      <p>
+        Efor group are using Kolmisoft telecom software in it. My job is that developing an a .Net program that integrates with that Kolmisoft software. By integration, I have fetch the call recording data to BTK in a spesific JSON format. I have used many <strong className="text-stone-600">design pattern method</strong> in this app to learn it deeply.
+
+        <br /><br />
+
+        I have developed a program .Net program that parses insurance policies from different companies delivered by email. Since each company has its own email format I have used different parser for them. I have used factory design pattern while selecting the parser for the email. All the parser such as; AllianzParser, AksigortaParser derived by Parser Interface.
+      </p>
+    ),
+  },
+  {
+    date: 'July 2018 - October 2019',
+    location: 'Full-Stack Software Developer',
+    title: 'Fastsoft Information Techology',
+    content: (
+      <p>
+        The company provides general software solutions for the  hospitals. I have used many programing languages and technologies such as; .Net, Angular, PostreSQL, Microsoft SQL Server and TFS.
+      </p>
+    ),
+  }
 ];
 
 /**

@@ -1,0 +1,3 @@
+Şirketin kullandığı Kolmisoft telekom altyapısı ile entegre olarak, oluşan arama kayıt verilerini, BTK’ya belirli aralıklarla ileten bir .Net yazılımı geliştirilmiştir. Thread yapısı kullanılarak, eş zamanlı gönderiler sağlanmıştır. 
+
+Kolmisoft altyapısında(Ruby on Rails) oluşan hatalara teknik çözümler üretilmiştir. Mail aracılığıyla farklı şirketlerden gelen sigorta poliçelerini parse etme işlemi gerçekleştirilmiştir. Her şirketin kendi email formatı olduğu için farklı parserler, tasarım kalıpları uygun şekilde temiz kod kavramı göze alınarak yazılmıştır.
