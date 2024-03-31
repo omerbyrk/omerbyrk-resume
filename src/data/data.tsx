@@ -8,23 +8,20 @@ import {
   SparklesIcon,
 } from '@heroicons/react/24/outline';
 
+import FiverrIcon from '../components/Icon/FiverrIcon';
 import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
-import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
-import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
-import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
-import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
-import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
-import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
-import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
-import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
-import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
-import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
-import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
+import porfolioImage1 from '../images/portfolio/portfolio-1.png';
+import porfolioImage2 from '../images/portfolio/portfolio-2.png';
+import porfolioImage3 from '../images/portfolio/portfolio-3.png';
+import porfolioImage4 from '../images/portfolio/portfolio-4.png';
+import porfolioImage5 from '../images/portfolio/portfolio-5.png';
+import porfolioImage6 from '../images/portfolio/portfolio-6.png';
+import porfolioImage7 from '../images/portfolio/portfolio-7.png';
+import porfolioImage8 from '../images/portfolio/portfolio-8.png';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -132,15 +129,36 @@ export const skills: SkillGroup[] = [
     ],
   },
   {
+    name: 'Mobile development',
+    skills: [
+      {
+        name: 'Flutter',
+        level: 9,
+      },
+      {
+        name: 'Swift',
+        level: 6,
+      },
+    ],
+  },
+  {
     name: 'Frontend development',
     skills: [
       {
         name: 'React',
-        level: 9,
+        level: 8,
       },
       {
-        name: 'Typescript',
+        name: 'Angular',
         level: 7,
+      },
+      {
+        name: 'Typescipt',
+        level: 8,
+      },
+      {
+        name: 'JavaScript',
+        level: 9,
       },
       {
         name: 'GraphQL',
@@ -156,8 +174,16 @@ export const skills: SkillGroup[] = [
         level: 8,
       },
       {
-        name: 'Rust',
-        level: 5,
+        name: 'C#',
+        level: 7,
+      },
+      {
+        name: 'Java',
+        level: 6,
+      },
+      {
+        name: 'Golang',
+        level: 6,
       },
       {
         name: 'Golang',
@@ -165,23 +191,7 @@ export const skills: SkillGroup[] = [
       },
     ],
   },
-  {
-    name: 'Mobile development',
-    skills: [
-      {
-        name: 'React Native',
-        level: 9,
-      },
-      {
-        name: 'Flutter',
-        level: 4,
-      },
-      {
-        name: 'Swift',
-        level: 3,
-      },
-    ],
-  },
+
 ];
 
 /**
@@ -189,70 +199,52 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'DİDİYO',
+    description: 'Food delivery app based on Nederlands. It is published on App Store & Google Play. I have used Flutter SDK, Flutter BLoC, Firebase & Bitbucket on this Project.',
+    url: 'https://didiyo.com',
     image: porfolioImage1,
   },
   {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Politics & War',
+    description: 'Text-based game application. It is a popular game in the App Store & Google Play. Some of the features I have added to the app are in-app purchase, push notification, API integration.',
+    url: 'https://apps.apple.com/us/app/politics-and-war/id1552461332',
     image: porfolioImage2,
   },
   {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Silarius Mobile App',
+    description: 'Shopify mobile application. I have developed a custom shopping application that integrates with any Shopify store via ShopifyStoreFront API. The app has cart management, payment gateway, product/category listing, filtering, searching, multi language, multi currency features in it.',
+    url: 'https://apps.apple.com/tr/app/silarius/id1545373631',
     image: porfolioImage3,
   },
   {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Love Letter',
+    description: 'This is my personal project. It gives users a way to sent Love Letter via SMS. When a receiver click the letter link on the SMS, the receiver get directed to browser to read the letter. I have used SwiftUI, Firebase, HTML, JavaScript & CSS in the project.',
+    url: 'https://apps.apple.com/tr/app/love-letter-between-couples/id1661561515',
     image: porfolioImage4,
   },
   {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Veri Sözlüğü',
+    description: 'It is developed for DSI(Devlet Su İşleri). It is a program to store their unstructured data that comes from outside of the institution. The main feature in the program is that allow user building dynamic form(like Google Forms), and enter their data to the system. The program supports text, number, date inputs. Furthermore, the data has relations between each other. When an user enter a data, s/he can select the parent of the data. For example, firstly, users create the model of the data they will give like bridge(name, year), then enter a bridge record via the dynamic form. After bridge is entered, they can create another model which related to the bridge like bridge materials, then enter the bridge materials to the system by chosing bridge parent record on the dynamic form. The program only accesible via VPN(in the institution), so I can not give you the link of it.',
+    url: '#',
     image: porfolioImage5,
   },
   {
-    title: 'Project title 6',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'VICTUME',
+    description: 'It is my hobby project I have developed it for nutritionist. It was the first times of the Flutter release. I just wanted to develop this project to practice Flutter, MongoDB, NodeJS, React and Docker. It is consisted of 3 parts like Backend (NodeJS), Web Admin Panel(React) and Mobile App (Flutter). In the admin panel, nutritionist can prepare an diet program and assign it to clients. In the mobile app, clients can contact with their nutritionist by message(used Socket connection) and give feedback to their nutritionist If they complate their task(diet program) on the each meal.',
+    url: 'https://github.com/omerbyrk/victume-mobile',
     image: porfolioImage6,
   },
   {
-    title: 'Project title 7',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Add to Cart Animation Package',
+    description: 'A flutter popular plugin which provide you add to cart animation. I have prepared it to special to shopping apps however It can be used it on the others apps too, becasue it accept every widget to drag as in the gif. So It can be useful at shopping, game, news and other category apps.',
+    url: 'https://pub.dev/packages/add_to_cart_animation',
     image: porfolioImage7,
   },
   {
-    title: 'Project title 8',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Flutter Boilerplate',
+    description: 'A flutter boilerplate project can be used both enterprise & individual application.',
+    url: 'https://github.com/omerbyrk/flutter-boilerplate',
     image: porfolioImage8,
-  },
-  {
-    title: 'Project title 9',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage9,
-  },
-  {
-    title: 'Project title 10',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage10,
-  },
-  {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage11,
   },
 ];
 
@@ -283,7 +275,7 @@ export const experience: TimelineItem[] = [
     title: 'Flutter Developer',
     content: (
       <p>
-        Depending on the customer's desires, I create a new application, add features to an existing application, or solve a bug in the application.
+        Depending on the customer's desires, I am creating a new application, adding features to an existing application, or solving a bug in the application.
         <br />
         <br />
         <strong>General Tasks</strong>
@@ -306,7 +298,7 @@ export const experience: TimelineItem[] = [
     title: 'Flutter Developer',
     content: (
       <p>
-        We have developed an app named DIDIYO consist of customer, market and courier applications. The project details is added to the projects section below. 2-week sprints were run for project management. JIRA, Time Doctor, Zoom & Teams were used for team management. Bitbucket was used as the version control system(Git).<br /><br />
+        We have developed an app named DIDIYO consist of customer, market and courier applications. The project details is added to the projects section below. <strong className="text-stone-600">2-week sprint</strong> were run for project management. <strong className="text-stone-600">JIRA, Time Doctor, Zoom & Teams</strong> were used for team management. <strong className="text-stone-600">Bitbucket</strong> was used as the version control system(Git).<br /><br />
         <strong>General Tasks</strong>
         <ul style={{ listStyleType: "unset", paddingLeft: "20px" }}>
           <li>UI Designs</li>
@@ -327,11 +319,11 @@ export const experience: TimelineItem[] = [
     title: 'Efor Group Insurance/Broker',
     content: (
       <p>
-        Efor group are using Kolmisoft telecom software in it. My job is that developing an a .Net program that integrates with that Kolmisoft software. By integration, I have fetch the call recording data to BTK in a spesific JSON format. I have used many <strong className="text-stone-600">design pattern method</strong> in this app to learn it deeply.
+        Efor group are using Kolmisoft telecom software in it. My job is that developing an a <strong className="text-stone-600">.Net</strong> program that integrates with that Kolmisoft software. By integration, I have fetch the call recording data to BTK in a spesific JSON format. I have used many <strong className="text-stone-600">design pattern method</strong> in this app to learn it deeply.
 
         <br /><br />
 
-        I have developed a program .Net program that parses insurance policies from different companies delivered by email. Since each company has its own email format I have used different parser for them. I have used factory design pattern while selecting the parser for the email. All the parser such as; AllianzParser, AksigortaParser derived by Parser Interface.
+        I have developed a program <strong className="text-stone-600">.Net</strong> program that parses insurance policies from different companies delivered by email. Since each company has its own email format I have used different parser for them. I have used <strong className="text-stone-600">factory design pattern</strong> while selecting the parser for the email. All the parser such as; AllianzParser, AksigortaParser derived by Parser Interface.
       </p>
     ),
   },
@@ -341,7 +333,7 @@ export const experience: TimelineItem[] = [
     title: 'Fastsoft Information Techology',
     content: (
       <p>
-        The company provides general software solutions for the  hospitals. I have used many programing languages and technologies such as; .Net, Angular, PostreSQL, Microsoft SQL Server and TFS.
+        The company provides general software solutions for hospitals. I have used many programing languages and technologies such as; <strong className="text-stone-600"> .Net Core, Angular, PostreSQL, Microsoft SQL Server and TFS</strong>.
       </p>
     ),
   }
@@ -354,19 +346,19 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
+      name: 'Deniz Bozkurt | Fastsoft Information Technology',
+      text: 'Omer was the only developer who works on the our project mobile side. He gave a brilliant effort from scratch point to app releasing. The project was an online booking system for Dietitian and Nutritionist. Omer added to the project Firebase Integration, Chat System, Push Notification and Assiging Diet menu features so on.. We used him on some web projects too. He is a versatile developer. It was great to work with you. Thank you again all your efforts.',
+      image: 'https://media.licdn.com/dms/image/C5603AQFbtwZk7fts7A/profile-displayphoto-shrink_800_800/0/1543830338429?e=1717632000&v=beta&t=9LwUChE3u3FeYAxyT8Av7PlbR7puARDsmCiuJXBF05A',
     },
     {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
+      name: 'Alex Winchell | Politics & War',
+      text: 'Omer did a great job, working with me daily on our project. I needed to build an app with all the features like in-app purchases, push notifications, and API integration. He really made the process as easy for me as possible and stayed on top of everything. I have been and will be continuing to work with Omer and I would highly recommend him for your next app project. Thanks Omer for all of your hard work!',
+      image: 'https://webvify.app/wp-content/uploads/2023/01/alex.jpg',
     },
     {
-      name: 'Someone else',
-      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
+      name: 'Aniket Arenja | Pizza Country',
+      text: '**ATTENTION** This developer right here will provide you with perfectly working apps. He is professional, does extra work for fair money, he consults and helps understanding processes. This man right here is my personal business partner from now on. There is nobody else better on the market. TRUST ME.',
+      image: 'https://webvify.app/wp-content/uploads/2023/01/pizza_country.jpg',
     },
   ],
 };
@@ -381,23 +373,23 @@ export const contact: ContactSection = {
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'omerbyrk8@gmail.com',
+      href: 'mailto:omerbyrk8@gmail.com',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
+      text: 'Polatlı, Ankara',
+      href: 'https://maps.app.goo.gl/y6voSAt13yiPef568',
     },
     {
       type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      text: '@omer.byrk06',
+      href: 'https://www.instagram.com/omer.byrk06',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'omerbyrk',
+      href: 'https://github.com/omerbyrk',
     },
   ],
 };
@@ -406,9 +398,9 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  { label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx' },
-  { label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker' },
-  { label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/' },
-  { label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/' },
-  { label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx' },
+  { label: 'Github', Icon: GithubIcon, href: 'https://github.com/omerbyrk' },
+  { label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/omerbyrk/' },
+  { label: 'Fiverr', Icon: FiverrIcon, href: 'https://www.fiverr.com/omerbyrk' },
+  { label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/omer.byrk06' },
+  { label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/omerbyrkk' },
 ];
