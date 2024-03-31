@@ -105,9 +105,9 @@ export const aboutData: About = {
     { label: 'Location', text: 'Ankara', Icon: MapIcon },
     { label: 'Age', text: '28', Icon: CalendarIcon },
     { label: 'Nationality', text: 'Turk', Icon: FlagIcon },
-    { label: 'Interests', text: 'Motorcycles, GYM, Books', Icon: SparklesIcon },
+    { label: 'Interests', text: 'Motorcycles, GYM & Books', Icon: SparklesIcon },
     { label: 'Study', text: 'Gazi University', Icon: AcademicCapIcon },
-    { label: 'Employment', text: 'Fiverr & Biounluk', Icon: BuildingOffice2Icon },
+    { label: 'Employment', text: 'Fiverr', Icon: BuildingOffice2Icon },
   ],
 };
 
@@ -236,13 +236,13 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     title: 'Add to Cart Animation Package',
-    description: 'A flutter popular plugin which provide you add to cart animation. I have prepared it to special to shopping apps however It can be used it on the others apps too, becasue it accept every widget to drag as in the gif. So It can be useful at shopping, game, news and other category apps.',
+    description: 'A flutter popular plugin which provide developers add to cart animation. I have prepared it to special to shopping apps however It can be used it on the others apps too, becasue it accept every widget to drag as in the gif. So It can be useful at shopping, game, news and other category apps.',
     url: 'https://pub.dev/packages/add_to_cart_animation',
     image: porfolioImage7,
   },
   {
     title: 'Flutter Boilerplate',
-    description: 'A flutter boilerplate project can be used both enterprise & individual application.',
+    description: 'A flutter boilerplate project can be used both enterprise & individual application. It has a lots of pre-build features such as; Auth, Provider, BLoC State Management, Dependency Injection, Localization & Theme.',
     url: 'https://github.com/omerbyrk/flutter-boilerplate',
     image: porfolioImage8,
   },
@@ -274,10 +274,12 @@ export const experience: TimelineItem[] = [
     location: 'Fiverr & Bionluk',
     title: 'Flutter Developer',
     content: (
-      <p>
-        Depending on the customer's desires, I am creating a new application, adding features to an existing application, or solving a bug in the application.
-        <br />
-        <br />
+      <>
+        <p>
+          Depending on the customer's desires, I am creating a new application, adding features to an existing application, or solving a bug in the application.
+          <br />
+          <br />
+        </p>
         <strong>General Tasks</strong>
         <ul style={{ listStyleType: "unset", paddingLeft: "20px" }}>
           <li>UI Designs</li>
@@ -289,7 +291,8 @@ export const experience: TimelineItem[] = [
           <li>AdMob Integration</li>
           <li>pub.dev library integration</li>
         </ul>
-      </p>
+
+      </>
     ),
   },
   {
@@ -297,8 +300,11 @@ export const experience: TimelineItem[] = [
     location: 'FreshApps at Eindhoven, Netherlands',
     title: 'Flutter Developer',
     content: (
-      <p>
-        We have developed an app named DIDIYO consist of customer, market and courier applications. The project details is added to the projects section below. <strong className="text-stone-600">2-week sprint</strong> were run for project management. <strong className="text-stone-600">JIRA, Time Doctor, Zoom & Teams</strong> were used for team management. <strong className="text-stone-600">Bitbucket</strong> was used as the version control system(Git).<br /><br />
+      <>
+
+        <p>
+          We have developed an app named DIDIYO consist of customer, market and courier applications. The project details is added to the projects section below. <strong className="text-stone-600">2-week sprint</strong> were run for project management. <strong className="text-stone-600">JIRA, Time Doctor, Zoom & Teams</strong> were used for team management. <strong className="text-stone-600">Bitbucket</strong> was used as the version control system(Git).<br /><br />
+        </p>
         <strong>General Tasks</strong>
         <ul style={{ listStyleType: "unset", paddingLeft: "20px" }}>
           <li>UI Designs</li>
@@ -310,7 +316,7 @@ export const experience: TimelineItem[] = [
           <li>pub.dev library integration</li>
           <li>Add to cart animation was developed by me for the DIDIYO project and uploaded to the pub.dev platform as an library. It has <strong className="text-stone-600"> 200 Likes & %93 popularity! 🤩</strong> <br />Link: <a style={{ color: "blue" }} href="https://pub.dev/packages/add_to_cart_animation" target='_blank'>add_to_cart_animation | Flutter packages</a> </li>
         </ul>
-      </p>
+      </>
     ),
   },
   {
@@ -347,7 +353,7 @@ export const testimonial: TestimonialSection = {
   testimonials: [
     {
       name: 'Deniz Bozkurt | Fastsoft Information Technology',
-      text: 'Omer was the only developer who works on the our project mobile side. He gave a brilliant effort from scratch point to app releasing. The project was an online booking system for Dietitian and Nutritionist. Omer added to the project Firebase Integration, Chat System, Push Notification and Assiging Diet menu features so on.. We used him on some web projects too. He is a versatile developer. It was great to work with you. Thank you again all your efforts.',
+      text: 'We have worked with Ömer for two years. We have use him on frontend, backend and mobile side of our projects. He was the joker developer of our company. Also, He is easy to communicate, hard working, versatile, responsible and self-improving developer. It was great to work with him. I am assuring that you are definately in the right place!',
       image: 'https://media.licdn.com/dms/image/C5603AQFbtwZk7fts7A/profile-displayphoto-shrink_800_800/0/1543830338429?e=1717632000&v=beta&t=9LwUChE3u3FeYAxyT8Av7PlbR7puARDsmCiuJXBF05A',
     },
     {
@@ -369,7 +375,7 @@ export const testimonial: TestimonialSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  description: '',
   items: [
     {
       type: ContactType.Email,
