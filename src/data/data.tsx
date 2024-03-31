@@ -14,15 +14,15 @@ import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
-import porfolioImage1 from '../images/portfolio/portfolio-1.png';
-import porfolioImage2 from '../images/portfolio/portfolio-2.png';
-import porfolioImage3 from '../images/portfolio/portfolio-3.png';
-import porfolioImage4 from '../images/portfolio/portfolio-4.png';
-import porfolioImage5 from '../images/portfolio/portfolio-5.png';
-import porfolioImage6 from '../images/portfolio/portfolio-6.png';
-import porfolioImage7 from '../images/portfolio/portfolio-7.png';
-import porfolioImage8 from '../images/portfolio/portfolio-8.png';
-import profilepic from '../images/profilepic.jpg';
+import porfolioImage1 from '../images/portfolio/portfolio-1.webp';
+import porfolioImage2 from '../images/portfolio/portfolio-2.webp';
+import porfolioImage3 from '../images/portfolio/portfolio-3.webp';
+import porfolioImage4 from '../images/portfolio/portfolio-4.webp';
+import porfolioImage5 from '../images/portfolio/portfolio-5.webp';
+import porfolioImage6 from '../images/portfolio/portfolio-6.webp';
+import porfolioImage7 from '../images/portfolio/portfolio-7.webp';
+import porfolioImage8 from '../images/portfolio/portfolio-8.webp';
+import profilepic from '../images/profilepic.webp';
 import testimonialImage from '../images/testimonial.webp';
 import {
   About,
@@ -41,8 +41,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Ömer Bayrak',
+  description: "It is Omer Bayrak's Personal Website",
 };
 
 /**
@@ -354,7 +354,7 @@ export const testimonial: TestimonialSection = {
     {
       name: 'Deniz Bozkurt | Fastsoft Information Technology',
       text: 'We have worked with Ömer for two years. We have use him on frontend, backend and mobile side of our projects. He was the joker developer of our company. Also, He is easy to communicate, hard working, versatile, responsible and self-improving developer. It was great to work with him. I am assuring that you are definately in the right place!',
-      image: 'https://media.licdn.com/dms/image/C5603AQFbtwZk7fts7A/profile-displayphoto-shrink_800_800/0/1543830338429?e=1717632000&v=beta&t=9LwUChE3u3FeYAxyT8Av7PlbR7puARDsmCiuJXBF05A',
+      image: 'https://cdn.jsdelivr.net/gh/omerbyrk/webvify-public/omerbayrak-cv/deniz-bozkurt.jpg',
     },
     {
       name: 'Alex Winchell | Politics & War',
