@@ -74,7 +74,7 @@ export const heroData: Hero = {
         at <strong className="text-stone-100">Fiverr</strong> helping build a modern, well-designed, clean-coded mobile applications.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me at <strong className="text-stone-100">GYM</strong>,
+        In my free time, you can catch me at <strong className="text-stone-100">GYM</strong>,
         driving <strong className="text-stone-100">motorcycle</strong>, reading <strong className="text-stone-100">books</strong> or exploring beautiful{' '}
         <strong className="text-stone-100">places</strong>.
       </p>
@@ -153,7 +153,7 @@ export const skills: SkillGroup[] = [
         level: 7,
       },
       {
-        name: 'Typescipt',
+        name: 'TypeScipt',
         level: 8,
       },
       {
@@ -184,11 +184,7 @@ export const skills: SkillGroup[] = [
       {
         name: 'Golang',
         level: 6,
-      },
-      {
-        name: 'Golang',
-        level: 4,
-      },
+      }
     ],
   },
 
