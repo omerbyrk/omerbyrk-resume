@@ -375,8 +375,8 @@ export const contact: ContactSection = {
   items: [
     {
       type: ContactType.Email,
-      text: 'omerbyrk8@gmail.com',
-      href: 'mailto:omerbyrk8@gmail.com',
+      text: 'omer.bayrak06@hotmail.com',
+      href: 'mailto:omer.bayrak06@hotmail.com',
     },
     {
       type: ContactType.Location,
