@@ -10,9 +10,7 @@ import {
 
 import FiverrIcon from '../components/Icon/FiverrIcon';
 import GithubIcon from '../components/Icon/GithubIcon';
-import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.webp';
 import porfolioImage2 from '../images/portfolio/portfolio-2.webp';
@@ -195,9 +193,9 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'DİDİYO',
-    description: 'Food delivery app based on Nederlands. It is published on App Store & Google Play. I have used Flutter SDK, Flutter BLoC, Firebase & Bitbucket on this Project.',
-    url: 'https://didiyo.com',
+    title: 'GLKR Şantiyeler',
+    description: 'The mobile app features a user-friendly interface for on-site use, integrating with .NET backend services. It includes modules for daily reporting, accounting, purchasing, material requests, payroll, and attendance, along with a real-time notification system.',
+    url: 'https://apps.apple.com/tr/app/%C5%9Fantiyeler-mobile/id6746783866',
     image: porfolioImage1,
   },
   {
@@ -266,9 +264,37 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
+    date: 'March 2024 - Present',
+    location: 'GLKR Software at Ankara, Turkey',
+    title: 'Senior Flutter Developer',
+    content: (
+      <>
+        <p>
+          At GLKR Software, a subsidiary of Güleker Construction established to digitize worksite
+          operations, I developed a mobile application to complement the existing web portal and
+          improve usability on construction sites. Using Flutter, I integrated with the existing
+          backend services.
+          <br />
+          <br />
+        </p>
+        <strong>I built these key modules from scratch</strong>
+        <ul style={{ listStyleType: "unset", paddingLeft: "20px" }}>
+          <li>Daily worksite reports</li>
+          <li>Accounting</li>
+          <li>Purchasing</li>
+          <li>Material demand</li>
+          <li>Payroll(timesheet) management</li>
+          <li>Real-time notification</li>
+          <li>pub.dev library integration</li>
+        </ul>
+
+      </>
+    ),
+  },
+  {
     date: 'March 2020 - Present',
     location: 'Fiverr & Bionluk',
-    title: 'Flutter Developer',
+    title: 'Flutter Developer (Freelance)',
     content: (
       <>
         <p>
@@ -380,19 +406,10 @@ export const contact: ContactSection = {
     },
     {
       type: ContactType.Location,
-      text: 'Polatlı, Ankara',
-      href: 'https://maps.app.goo.gl/y6voSAt13yiPef568',
-    },
-    {
-      type: ContactType.Instagram,
-      text: '@omer.byrk06',
-      href: 'https://www.instagram.com/omer.byrk06',
-    },
-    {
-      type: ContactType.Github,
-      text: 'omerbyrk',
-      href: 'https://github.com/omerbyrk',
-    },
+      text: 'Ankara',
+      href: 'https://maps.app.goo.gl/F1UKFHZmapWCQ4ZDA',
+    }
+
   ],
 };
 
@@ -403,6 +420,5 @@ export const socialLinks: Social[] = [
   { label: 'Github', Icon: GithubIcon, href: 'https://github.com/omerbyrk' },
   { label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/omerbyrk/' },
   { label: 'Fiverr', Icon: FiverrIcon, href: 'https://www.fiverr.com/omerbyrk' },
-  { label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/omer.byrk06' },
-  { label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/omerbyrkk' },
+
 ];
